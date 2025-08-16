@@ -90,6 +90,8 @@ ul li {
     border-radius: 8px;
     font-size: 1rem;
     font-weight: 500;
+    font-style: italic;
+    
     color: #333;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
     display: flex;
@@ -108,7 +110,7 @@ ul li:hover {
 ul li::before {
     content: "✓";
     color: #4a6cf7;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 /* Task List Container */
@@ -120,6 +122,10 @@ ul li::before {
     margin-bottom: 2rem; /* Space from the form */
     max-width: 350px;
     margin-right: 6rem;
+}
+
+.task-list :empty{
+    background-color:none;
 }
 
 /* Title for the list */
