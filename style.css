@@ -1,0 +1,168 @@
+/* General page styling */
+body {
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(135deg, #4a6cf7, #6dd5ed);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Form container */
+form {
+    background: white;
+    padding: 1.5rem;
+    /* padding-right: 3rem; */
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Fieldset styling */
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+/* Legend styling */
+legend {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Input fields */
+input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #4a6cf7;
+    box-shadow: 0 0 6px rgba(74, 108, 247, 0.4);
+    outline: none;
+}
+
+/* Submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background: #4a6cf7;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background: #3b57cc;
+    transform: translateY(-1px);
+}
+
+input[type="submit"]:active {
+    transform: translateY(1px);
+}
+
+/* Task list container */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+/* Task list items */
+ul li {
+    background: white;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect */
+ul li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Custom bullet icon using before */
+ul li::before {
+    content: "✓";
+    color: #4a6cf7;
+    font-weight: bold;
+}
+
+/* Task List Container */
+.task-list {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    margin-bottom: 2rem; /* Space from the form */
+    max-width: 350px;
+    margin-right: 6rem;
+}
+
+/* Title for the list */
+.task-list h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+/* Remove default bullets */
+.task-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Task Items */
+.task-list li {
+    background: white;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.task-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Custom check icon */
+.task-list li::before {
+    content: "✓";
+    color: #4a6cf7;
+    font-weight: bold;
+}

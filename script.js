@@ -2,8 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     
     document.querySelector('#submit').disabled = true;
     
-    document.querySelector('#task').onchange = () => {       //onke
-        document.querySelector('#submit').disabled = false;
+    document.querySelector('#task').onchange = () => {
+        if  ( document.querySelector('#task').value != '')
+            document.querySelector('#submit').disabled = false;
+        else 
+            document.querySelector('#submit').disabled = true;
     };
     
     document.querySelector('#task_form').onsubmit = () => {
